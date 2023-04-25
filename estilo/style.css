@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+:root {
+    --rosaclaro: #F2DEA2;
+    --laranja: #F28322;
+    --rosa: #F2BF91;
+    --vermelho: #D94436;
+    --rosamedio: #F2ADA7;
+
+    --fonte-padrao: Tahoma, Arial, Verdana, Helvetica, sans-serif;
+}
+ body{
+    background-color: var(--rosaclaro);
+    font-family: var(--fonte-padrao);
+}
+
+header{
+    background-color: var(--rosa);
+    color: var(--vermelho);
+    /*baixar a fonte utilizada na logo*/
+}
+
+footer{
+    background-color: --rosa;
+}
