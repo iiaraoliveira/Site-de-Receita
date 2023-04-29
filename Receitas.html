@@ -1,187 +1,213 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CookTime</title>
-    <link rel="stylesheet" href="estilo/style.css">
-    <link rel="shortcut icon" href="./imagens/COOK TIME.png" type="image/x-icon">
+    <link rel="stylesheet" href="estilo/style.css" />
+    <link
+      rel="shortcut icon"
+      href="./imagens/COOK TIME.png"
+      type="image/x-icon"
+    />
+  </head>
 
-</head>
-
-<body>
+  <body>
     <header>
-        <h1>CookTime</h1>
-        <p>Sempre a melhor receita</p>
+      <h1>CookTime</h1>
+      <p>Sempre a melhor receita</p>
     </header>
     <nav>
-        <a href="#">Home</a>
-        <a href="#">Notícias</a>
-        <a href="#">Culinária Nacional</a>
-        <a href="#">Culinária Internacional</a>
-        <a href="#">Sobre nós</a>
-        <a href="#">Seja membro</a>
+      <a href="#">Home</a>
+      <a href="#">Notícias</a>
+      <a href="#">Culinária Nacional</a>
+      <a href="#">Culinária Internacional</a>
+      <a href="#">Sobre nós</a>
+      <a href="#">Seja membro</a>
     </nav>
     <main>
-        <article>
-            <img src="./imagens/pudim.png" alt="Pudim">
-            <section>
+      <article>
+        <img src="./imagens/pudim.png" alt="Pudim" />
+        <section></section>
+      </article>
+      <!-- Section da missao, visao e valores-->
+      <section>
+        <div>
+          <h2>MISSÃO</h2>
+          <p>Ajudar nossos leitores a cozinhar com simplicidade e prazer.</p>
+        </div>
 
-            </section>
-        </article>
-        <!-- Section da missao, visao e valores-->
-        <section>
+        <div>
+          <h2>VISÃO</h2>
+          <p>Ser seu "caderno" de receitas favorito.</p>
+        </div>
+
+        <div>
+          <h2>VALORES</h2>
+          <ul type="1">
+            <!--Usar  list-style-image: url('endereço da imagem')no CSS para ficar mais fofo-->
+            <li>Agimos com propósito</li>
+            <li>Entregamos resultados com excelência</li>
+            <li>Construímos juntos</li>
+            <li>Trabalhamos com simplicidade</li>
+          </ul>
+        </div>
+      </section>
+      <!--Article da propaganda a esqueda-->
+      <article>
+        <!--aqui vai uma imagem q ocupa todo o article-->
+        <p>aqui vai ter a propaganda esquerda</p>
+        <img />
+      </article>
+      <!--Section com 3 receitas na vertical, em cada div uma foto de comida-->
+      <section>
+        <div>
+          <!--Criar uma classe para essa div, e fazer o background pelo css-->
+          <h2>Delícias Brasileiras</h2>
+          <p>Descubra e aprenda a fazer diversos pratos presentes na nossa culinária nacional. Desde tacacá, coxinha e cuscuz paulista, até tortas doces, sobremesas e brigadeiro.</p>
+        </div>
+
+        <div>
+            <!--Criar uma classe para essa div, e fazer o background pelo css-->
+          <h2>Sabores ao Redor do Mundo</h2>
+          <p>Conheça e viaje para os mais diversos países do mundo por meio de seus pratos tradicionais. Você pode ir da Colômbia para a China, conhecer todos os sabores da culinária mexicana e muito mais.</p>
+        </div>
+
+        <div>
+            <!--Criar uma classe para essa div, e fazer o background pelo css-->
+          <h2>Alimentação Saudável</h2>
+          <p>Conheça pratos deliciosos para cozinhar e incluir na sua dieta.</p>
+        </div>
+      </section>
+      <!--Article da propaganda a direita usar float para posicionar-->
+      <article>
+        <!--aqui vai uma imagem q ocupa todo o article-->
+        <p>aqui vai ter a propaganda direita</p>
+
+        <img />
+      </article>
+      <!--Aqui o usuario vai add a receita -->
+      <section>
+        <div id="titulo">
+          <h2>Adicione sua receita</h2>
+        </div>
+
+        <div id="imagem"></div>
+
+        <div id="texto">
+          <button>Enviar</button>
+          <button>Limpar</button>
+        </div>
+      </section>
+      <!--Mural de pessoas que adicionaram receitas no site.
+        Sugestão: Usar galeria de imagens para colocar tudo junto-->
+      <section>
+        <div id="title">
+          <h2>Mural de receitas adicionadas</h2>
+        </div>
+
+        <div id="add1">
+          <img src="./imagens/sopa.jpg" alt="Sopa de Mandioquinha" />
+          <p>Sopa de Mandioquinha</p>
+          <p>Adicionada à 4 horas</p>
+        </div>
+
+        <div id="add2">
+          <img src="./imagens/morangoffe.png" alt="Morangoffe" />
+          <p>Morangoffe</p>
+          <p>Adicionada à 20 horas</p>
+        </div>
+
+        <div id="add3">
+          <img src="./imagens/sopaParaguai.jpg" alt="Sopa Paraguaia" />
+          <p>Sopa Paraguaia</p>
+          <p>Adicionada à 1 dia</p>
+        </div>
+
+        <div id="add4">
+          <img
+            src="./imagens/mousse.jpg"
+            alt="Mousse de Maracuja com Chocolate"
+          />
+          <p>Mousse de Maracuja com Chocolate</p>
+          <p>Adicionada à 1 dia</p>
+        </div>
+
+        <div id="texto">
+          <button></button>
+          <button></button>
+        </div>
+
+        <div>
+          <h3>Reviews</h3>
+        </div>
+      </section>
+
+      <!--Aqui é onde terá o video do Youtube e links de navegação-->
+      <section>
+        <div>
+          <!--Youtube-->
+          <div id="social button"></div>
+
+          <div id="video"></div>
+
+          <nav>
             <div>
-                <H2>MISSÃO</H2>
-                <p>
-                    Ajudar nossos leitores a cozinhar com simplicidade e prazer.
-
-                </p>
+              <h3>Navegador</h3>
             </div>
+            <!--adicionar lista-->
+            <ul>
+              <li></li>
+            </ul>
+          </nav>
+        </div>
+      </section>
 
-            <div>
-                <H2>VISÃO</H2>
-                <p>
-                    Ser seu "caderno" de receitas favorito.
-                </p>
-            </div>
+      <!--Formulário de incricao no curso-->
+      <aside id="Inscricao">
+        <h3>
+          Quer começar a cozinhar ou quer aprimorar suas habilidades e não sabe
+          por onde começar?
+        </h3>
+        <h4>
+          Com o nosso curso, você poderá desenvolver suas habilidade culinárias
+        </h4>
+        <p>Inscreva-se pelo formulário disponível abaixo:</p>
+        <form action="Receitas.html" method="post">
+          <label for="e-mail">E-mail: </label>
+          <input type="email" id="e-mail" name="email" />
 
-            <div>
-                <H2>VALORES</H2>
-                <ul type="1"> <!--Usar  list-style-image: url('endereço da imagem')no CSS para ficar mais fofo-->
-                    <li>Agimos com propósito</li>
-                    <li>Entregamos resultados com excelência</li>
-                    <li>Construímos juntos</li>
-                    <li>Trabalhamos com simplicidade</li>
-                </ul>
+          <label for="username">Nome:</label>
+          <input type="text" id="username" name="username" />
 
-            </div>
+          <label for="pwd">Senha:</label><br />
+          <input type="password" id="pwd" name="pwd" />
 
-        </section>
-        <!--Article da propaganda a esqueda-->
-        <article>
-            <!--aqui vai uma imagem q ocupa todo o article-->
-            <p>aqui vai ter a propaganda esquerda</p>
-            <img>
-        </article>
-        <!--Section com 3 receitas na vertical, em cada div uma foto de comida-->
-        <section>
-            <div>
-                <img>
-                <p>aqui vai ter uma receita</p>
+          <label>Data de nascimento:</label>
+          <input type="date" name="calendário" />
 
+          <label for="telefone">Telefone:</label>
+          <input type="tel" id="telefone" placeholder="(99) 99999-9999" />
 
-            </div>
+          <label>Indique qual é o seu nível de conhecimento na cozinha</label>
+          <input type="radio" id="n0" name="nivel" value="N0" />
+          <label for="n0">Não sei fazer nada.</label>
 
-            <div>
-                <img>
-                <p>aqui vai ter uma receita</p>
+          <input type="radio" id="n1" name="nivel" value="N1" />
+          <label for="n1">Consigo seguir algumas receitas que procuro</label>
 
-            </div>
+          <input type="radio" id="n2" name="nivel" value="N2" />
+          <label for="n2">Quero dar mais sabor as minhas receitas.</label>
 
-            <div>
-                <img>
-                <p>aqui vai ter uma receita</p>
-
-            </div>
-
-        </section>
-        <!--Article da propaganda a direita usar float para posicionar-->
-        <article>
-            <!--aqui vai uma imagem q ocupa todo o article-->
-            <p>aqui vai ter a propaganda direita</p>
-
-            <img>
-        </article>
-        <!--Aqui o usuario vai add a receita -->
-        <section>
-            <div id="titulo">
-                <h2>Adicione sua receita</h2>
-            </div>
-
-            <div id="imagem">
-
-            </div>
-
-            <div id="texto">
-                <button></button>
-                <button></button>
-
-            </div>
-        </section>
-        <!--Mural de pessoas que adicionaram receitas no site-->
-        <section>
-            <div id="title">
-                <h2>Mural de receitas adicionadas</h2>
-            </div>
-
-            <div id="imagem1">
-                <!--Add legenda em cada imagem-->
-
-            </div>
-
-            <div id="imagem2">
-
-            </div>
-
-            <div id="imagem3">
-
-            </div>
-
-            <div id="imagem4">
-
-            </div>
-
-            <div id="texto">
-                <button></button>
-                <button></button>
-
-            </div>
-
-            <div>
-                <h3>Reviwes</h3>
-            </div>
-        </section>
-        <!--Aqui é onde terá o video do Youtube e links de navegação-->
-        <section>
-            <div> <!--Youtube-->
-                <div id="social button">
-
-                </div>
-
-                <div id="video">
-
-                </div>
-
-                <nav>
-                    <div>
-                        <h3>Navegador</h3>
-                    </div>
-                    <!--adicionar lista-->
-                    <ul>
-                        <li></li>
-                    </ul>
-
-                </nav>
-            </div>
-
-
-        </section>
-        <!--Formulário de incricao no curso-->
-        <aside id="Inscricao">
-            <form>
-
-            </form>
-            <button></button>
-
-        </aside>
+          <input type="submit" value="Confirmar inscrição" />
+          <input type="reset" value="Limpar" />
+        </form>
+      </aside>
     </main>
 
     <footer>
-        <p>Site criado por Iara Costa e Raquel Duarte</p>
+      <p>Site criado por Iara Costa e Raquel Duarte</p>
     </footer>
-</body>
-
+  </body>
 </html>
