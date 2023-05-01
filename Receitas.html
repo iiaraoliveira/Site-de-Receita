@@ -15,8 +15,12 @@
 
   <body>
     <header>
-      <h1>CookTime</h1>
+      <img src="./imagens/COOK TIME.png" alt="CookTime"  width="80px" height="70px"/>
+      <div class="cabecalho">
+        <h1>CookTime</h1>
       <p>Sempre a melhor receita</p>
+      </div>
+      
     </header>
     <nav>
       <a href="#">Home</a>
@@ -95,19 +99,7 @@
 
         <img />
       </article>
-      <!--Aqui o usuario vai add a receita -->
-      <section>
-        <div id="titulo">
-          <h2>Adicione sua receita</h2>
-        </div>
-
-        <div id="imagem"></div>
-
-        <div id="texto">
-          <button>Enviar</button>
-          <button>Limpar</button>
-        </div>
-      </section>
+      
       <!--Mural de pessoas que adicionaram receitas no site.
         Sugestão: Usar galeria de imagens para colocar tudo junto-->
       <section>
@@ -141,14 +133,22 @@
           <p>Mousse de Maracuja com Chocolate</p>
           <p>Adicionada à 1 dia</p>
         </div>
-
-        <div id="texto">
-          <button></button>
-          <button></button>
+        <!--Aqui o usuario vai add a receita -->
+      <section>
+        <div id="titulo">
+          <h2>Faça parte da nossa comunidade e adicione uma receita</h2>
         </div>
+<form action="Receitas.html" method="post"></form>
+        <div id="imagem">
+        <label for="receitaAdicionada">Insira sua receita e uma imagem, se tiver</label>
+        <input type="file" id="receitaAdicionada" name="receitaAdicionada" value="">
+        </div>
+      <div id="texto">
 
         <div>
-          <h3>Reviews</h3>
+          <textarea name="receita" rows="2" cols="30"></textarea>
+          <input type="submit" value="Enviar receita">
+        <input type="reset" value="Limpar">
         </div>
       </section>
 
@@ -156,9 +156,13 @@
       <section>
         <div>
           <!--Youtube-->
-          <div id="social button"></div>
+          <div id="social button">
+            <button type="button">Social Button</button>
+          </div>
 
-          <div id="video"></div>
+          <div id="video">
+            <iframe width="280" height="157.5" src="https://www.youtube.com/embed/mhDl19m8tn0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          </div>
 
           <nav>
             <div>
@@ -166,7 +170,11 @@
             </div>
             <!--adicionar lista-->
             <ul>
-              <li></li>
+              <li><a href="#">As favoritas do time</a></li>
+              <li><a href="#">Para amantes de doces</a></li>
+              <li><a href="#">Comidas festivas</a></li>
+              <li><a href="#">Regionalismo culinário</a></li>
+              <li><a href="#">As melhores veganas</a></li>
             </ul>
           </nav>
         </div>
