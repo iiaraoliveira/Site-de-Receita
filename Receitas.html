@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -15,12 +15,15 @@
 
   <body>
     <header>
-      <img src="./imagens/COOK TIME.png" alt="CookTime"  width="80px" height="70px"/>
+      <img src="./imagens/COOK TIME.png" alt="CookTime"  width="90px" height="80px"/>
       <div class="cabecalho">
-        <h1>CookTime</h1>
+        <h1>COOKTIME</h1>
       <p>Sempre a melhor receita</p>
       </div>
-      
+      <div class="login">
+        <button type="button" id="insc">Se inscreva</button>
+        <button type="button" id="log">Login</button>
+      </div>
     </header>
     <nav>
       <a href="#">Home</a>
@@ -29,11 +32,11 @@
       <a href="#">Culinária Internacional</a>
       <a href="#">Sobre nós</a>
       <a href="#">Seja membro</a>
+      <input type="text" placeholder="Pesquisar">
     </nav>
     <main>
       <article>
-        <img src="./imagens/pudim.png" alt="Pudim" />
-        <section></section>
+        <img src="./imagens/pudim.jpg" alt="Pudim" width: 100%/>
       </article>
       <!-- Section da missao, visao e valores-->
       <section>
@@ -156,12 +159,13 @@
       <section>
         <div>
           <!--Youtube-->
-          <div id="social button">
-            <button type="button">Social Button</button>
-          </div>
-
+          
           <div id="video">
             <iframe width="280" height="157.5" src="https://www.youtube.com/embed/mhDl19m8tn0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          </div>
+
+          <div id="saibaMais">
+            <button type="button">Saiba Mais</button>
           </div>
 
           <nav>
@@ -237,7 +241,7 @@
               width="80px"
               height="70px"
             />
-            <p class="data">08/12/2022</p>
+            <p class="data"><small>08/12/2022</small></p>
           </div>
           <!--Estrelas de avaliação -->
         </div>
