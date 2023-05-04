@@ -46,7 +46,6 @@ header {
 
 .cabecalho > .login{
   text-align: right;
-
 }
 nav {
   background-color: var(--vermelho);
