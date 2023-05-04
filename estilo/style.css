@@ -10,7 +10,7 @@
   --fonte-padrao: Tahoma, Arial, Verdana, Helvetica, sans-serif;
 }
 body {
-  background-color: var(--rosaclaro);
+  /* background-color: var(--rosaclaro); */
   font-family: var(--fonte-padrao);
 }
 
@@ -24,8 +24,37 @@ footer {
   background-color: --rosa;
 }
 
-/* Parte das avaliações */
-.stars {
-  display: flex;
-  flex-direction: row;
+main {
+  margin: auto;
+  padding: 0px, 40px;
+  max-width: 990px;
+  margin-top: 100px;
 }
+
+/* #cabecalho {
+  background: url(/imagens/pudim.png);
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+}
+
+.MVV {
+  display: flex;
+  background-color: #f28322;
+  gap: 20px;
+  border: 20px;
+  padding: 10px;
+  text-align: center;
+  display: inline-flex;
+  align-items: center;
+}
+.mvv {
+  padding: 40px;
+  border: 1px solid rgb(0, 0, 0);
+  width: 200px;
+  height: 200px;
+}
+ul {
+  list-style-image: url(/imagens/favorito.png);
+  text-align: left;
+} */
