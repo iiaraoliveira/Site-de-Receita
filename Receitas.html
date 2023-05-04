@@ -1,167 +1,164 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CookTime</title>
-    <link rel="stylesheet" href="estilo/style.css" />
-    <link
-      rel="shortcut icon"
-      href="./imagens/COOK TIME.png"
-      type="image/x-icon"
-    />
-  </head>
 
-  <body>
-    <header>
-      <img src="./imagens/COOK TIME.png" alt="CookTime"  width="90px" height="80px"/>
-      <div class="cabecalho">
-        <h1>COOKTIME</h1>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CookTime</title>
+  <link rel="stylesheet" href="estilo/style.css" />
+  <link rel="shortcut icon" href="./imagens/COOK TIME.png" type="image/x-icon" />
+</head>
+
+<body>
+  <header>
+    <img src="./imagens/COOK TIME (1).png" alt="CookTime" width="90px" height="80px" />
+    <div class="cabecalho">
+      <h1>COOKTIME</h1>
       <p>Sempre a melhor receita</p>
+    </div>
+    <div class="login">
+      <button type="button" id="insc">Se inscreva</button>
+      <button type="button" id="log">Login</button>
+    </div>
+  </header>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Notícias</a>
+    <a href="#">Culinária Nacional</a>
+    <a href="#">Culinária Internacional</a>
+    <a href="#">Sobre nós</a>
+    <a href="#">Seja membro</a>
+    <input type="text" placeholder="Pesquisar">
+  </nav>
+  <main>
+    <article>
+      <img class="imagens" src="./imagens/pudim.jpg" alt="Pudim" />
+    </article>
+    <!-- Section da missao, visao e valores-->
+    <section class="mvv maior">
+      <div class="mvv menor">
+        <h2 class="mb">MISSÃO</h2>
+        <p class="mb">Ajudar nossos leitores a cozinhar com simplicidade e prazer.</p>
       </div>
-      <div class="login">
-        <button type="button" id="insc">Se inscreva</button>
-        <button type="button" id="log">Login</button>
+
+      <div class="mvv menor">
+        <h2 class="mb">VISÃO</h2>
+        <p class="mb">Ser seu "caderno" de receitas favorito.</p>
       </div>
-    </header>
-    <nav>
-      <a href="#">Home</a>
-      <a href="#">Notícias</a>
-      <a href="#">Culinária Nacional</a>
-      <a href="#">Culinária Internacional</a>
-      <a href="#">Sobre nós</a>
-      <a href="#">Seja membro</a>
-      <input type="text" placeholder="Pesquisar">
-    </nav>
-    <main>
-      <article>
-        <img src="./imagens/pudim.jpg" alt="Pudim" width: 100%/>
-      </article>
-      <!-- Section da missao, visao e valores-->
-      <section>
-        <div>
-          <h2>MISSÃO</h2>
-          <p>Ajudar nossos leitores a cozinhar com simplicidade e prazer.</p>
-        </div>
 
-        <div>
-          <h2>VISÃO</h2>
-          <p>Ser seu "caderno" de receitas favorito.</p>
-        </div>
+      <div class="mvv menor">
+        <h2 class="mb">VALORES</h2>
+        <ul class="mb" type="1">
+          <!--Usar  list-style-image: url('endereço da imagem')no CSS para ficar mais fofo-->
+          <li>Agimos com propósito</li>
+          <li>Entregamos resultados com excelência</li>
+          <li>Construímos juntos</li>
+          <li>Trabalhamos com simplicidade</li>
+        </ul>
+      </div>
+    </section>
+    <!--Article da propaganda a esqueda-->
+    <article>
+      <!--aqui vai uma imagem q ocupa todo o article-->
+      <p>aqui vai ter a propaganda esquerda</p>
+      <img />
+    </article>
+    <!--Section com 3 receitas na vertical, em cada div uma foto de comida-->
+    <section>
+      <div>
+        <!--Criar uma classe para essa div, e fazer o background pelo css-->
+        <h2>Delícias Brasileiras</h2>
+        <p>
+          Descubra e aprenda a fazer diversos pratos presentes na nossa
+          culinária nacional. Desde tacacá, coxinha e cuscuz paulista, até
+          tortas doces, sobremesas e brigadeiro.
+        </p>
+      </div>
 
-        <div>
-          <h2>VALORES</h2>
-          <ul type="1">
-            <!--Usar  list-style-image: url('endereço da imagem')no CSS para ficar mais fofo-->
-            <li>Agimos com propósito</li>
-            <li>Entregamos resultados com excelência</li>
-            <li>Construímos juntos</li>
-            <li>Trabalhamos com simplicidade</li>
-          </ul>
-        </div>
-      </section>
-      <!--Article da propaganda a esqueda-->
-      <article>
-        <!--aqui vai uma imagem q ocupa todo o article-->
-        <p>aqui vai ter a propaganda esquerda</p>
-        <img />
-      </article>
-      <!--Section com 3 receitas na vertical, em cada div uma foto de comida-->
-      <section>
-        <div>
-          <!--Criar uma classe para essa div, e fazer o background pelo css-->
-          <h2>Delícias Brasileiras</h2>
-          <p>
-            Descubra e aprenda a fazer diversos pratos presentes na nossa
-            culinária nacional. Desde tacacá, coxinha e cuscuz paulista, até
-            tortas doces, sobremesas e brigadeiro.
-          </p>
-        </div>
+      <div>
+        <!--Criar uma classe para essa div, e fazer o background pelo css-->
+        <h2>Sabores ao Redor do Mundo</h2>
+        <p>
+          Conheça e viaje para os mais diversos países do mundo por meio de
+          seus pratos tradicionais. Você pode ir da Colômbia para a China,
+          conhecer todos os sabores da culinária mexicana e muito mais.
+        </p>
+      </div>
 
-        <div>
-          <!--Criar uma classe para essa div, e fazer o background pelo css-->
-          <h2>Sabores ao Redor do Mundo</h2>
-          <p>
-            Conheça e viaje para os mais diversos países do mundo por meio de
-            seus pratos tradicionais. Você pode ir da Colômbia para a China,
-            conhecer todos os sabores da culinária mexicana e muito mais.
-          </p>
-        </div>
+      <div>
+        <!--Criar uma classe para essa div, e fazer o background pelo css-->
+        <h2>Alimentação Saudável</h2>
+        <p>Conheça pratos deliciosos para cozinhar e incluir na sua dieta.</p>
+      </div>
+    </section>
+    <!--Article da propaganda a direita usar float para posicionar-->
+    <article>
+      <!--aqui vai uma imagem q ocupa todo o article-->
+      <p>aqui vai ter a propaganda direita</p>
 
-        <div>
-          <!--Criar uma classe para essa div, e fazer o background pelo css-->
-          <h2>Alimentação Saudável</h2>
-          <p>Conheça pratos deliciosos para cozinhar e incluir na sua dieta.</p>
-        </div>
-      </section>
-      <!--Article da propaganda a direita usar float para posicionar-->
-      <article>
-        <!--aqui vai uma imagem q ocupa todo o article-->
-        <p>aqui vai ter a propaganda direita</p>
+      <img />
+    </article>
 
-        <img />
-      </article>
-      
-      <!--Mural de pessoas que adicionaram receitas no site.
+    <!--Mural de pessoas que adicionaram receitas no site.
         Sugestão: Usar galeria de imagens para colocar tudo junto-->
-      <section>
-        <div id="title">
-          <h2>Mural de receitas adicionadas</h2>
-        </div>
+    <section>
+      <div id="title">
+        <h2>Mural de receitas adicionadas</h2>
+      </div>
 
-        <div id="add1">
-          <img src="./imagens/sopa.jpg" alt="Sopa de Mandioquinha" />
-          <p>Sopa de Mandioquinha</p>
-          <p>Adicionada à 4 horas</p>
-        </div>
+      <div id="add1">
+        <img class="imagens" src="./imagens/sopa.jpg" alt="Sopa de Mandioquinha" />
+        <p>Sopa de Mandioquinha</p>
+        <p>Adicionada à 4 horas</p>
+      </div>
 
-        <div id="add2">
-          <img src="./imagens/morangoffe.png" alt="Morangoffe" />
-          <p>Morangoffe</p>
-          <p>Adicionada à 20 horas</p>
-        </div>
+      <div id="add2">
+        <img class="imagens" src="./imagens/morangoffe.png" alt="Morangoffe" />
+        <p>Morangoffe</p>
+        <p>Adicionada à 20 horas</p>
+      </div>
 
-        <div id="add3">
-          <img src="./imagens/sopaParaguai.jpg" alt="Sopa Paraguaia" />
-          <p>Sopa Paraguaia</p>
-          <p>Adicionada à 1 dia</p>
-        </div>
+      <div id="add3">
+        <img class="imagens" src="./imagens/sopaParaguai.jpg" alt="Sopa Paraguaia" />
+        <p>Sopa Paraguaia</p>
+        <p>Adicionada à 1 dia</p>
+      </div>
 
-        <div id="add4">
-          <img
-            src="./imagens/mousse.jpg"
-            alt="Mousse de Maracuja com Chocolate"
-          />
-          <p>Mousse de Maracuja com Chocolate</p>
-          <p>Adicionada à 1 dia</p>
-        </div>
-        <!--Aqui o usuario vai add a receita -->
+      <div id="add4">
+        <img class="imagens" src="./imagens/mousse.jpg" alt="Mousse de Maracuja com Chocolate" />
+        <p>Mousse de Maracuja com Chocolate</p>
+        <p>Adicionada à 1 dia</p>
+      </div>
+      <!--Aqui o usuario vai add a receita -->
       <section>
         <div id="titulo">
           <h2>Faça parte da nossa comunidade e adicione uma receita</h2>
         </div>
-<form action="Receitas.html" method="post"></form>
+        <form action="Receitas.html" method="post"></form>
         <div id="imagem">
-        <label for="receitaAdicionada">Insira sua receita e uma imagem, se tiver</label>
-        <input type="file" id="receitaAdicionada" name="receitaAdicionada" value="">
+          <label for="receitaAdicionada">Insira sua receita e uma imagem, se tiver</label>
+          <input type="file" id="receitaAdicionada" name="receitaAdicionada" value="">
         </div>
-      <div id="texto">
+        <div id="texto">
 
-        <div>
-          <textarea name="receita" rows="2" cols="30"></textarea>
-          <input type="submit" value="Enviar receita">
-        <input type="reset" value="Limpar">
-        </div>
+          <div>
+            <textarea name="receita" rows="2" cols="30"></textarea>
+            <input type="submit" value="Enviar receita">
+            <input type="reset" value="Limpar">
+          </div>
       </section>
 
       <!--Aqui é onde terá o video do Youtube e links de navegação-->
       <section>
         <div>
           <!--Youtube-->
-          
+
           <div id="video">
-            <iframe width="280" height="157.5" src="https://www.youtube.com/embed/mhDl19m8tn0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe class="video" width="280" height="157.5" src="https://www.youtube.com/embed/mhDl19m8tn0"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen></iframe>
           </div>
 
           <div id="saibaMais">
@@ -236,11 +233,8 @@
             site.
           </p>
           <div class="stars">
-            <img
-              src="./imagens/4-stars-rating-sign-and-symbol-on-transparent-background-free-png.webp"
-              width="80px"
-              height="70px"
-            />
+            <img src="./imagens/4-stars-rating-sign-and-symbol-on-transparent-background-free-png.webp" width="80px"
+              height="70px" />
             <p class="data"><small>08/12/2022</small></p>
           </div>
           <!--Estrelas de avaliação -->
@@ -257,11 +251,8 @@
             receita que lembra minha infância, torta de limão.
           </p>
           <div class="stars">
-            <img
-              src="./imagens/4-stars-rating-sign-and-symbol-on-transparent-background-free-png.webp"
-              width="80px"
-              height="70px"
-            />
+            <img src="./imagens/4-stars-rating-sign-and-symbol-on-transparent-background-free-png.webp" width="80px"
+              height="70px" />
             <p class="data">18/01/2023</p>
           </div>
           <!--Estrelas de avaliação -->
@@ -274,11 +265,8 @@
           <h1>Juliana Valentino</h1>
           <p>Melhor site de receitas</p>
           <div class="stars">
-            <img
-              src="./imagens/4-stars-rating-sign-and-symbol-on-transparent-background-free-png.webp"
-              width="80px"
-              height="70px"
-            />
+            <img src="./imagens/4-stars-rating-sign-and-symbol-on-transparent-background-free-png.webp" width="80px"
+              height="70px" />
             <p class="data">24/04/2023</p>
           </div>
         </div>
@@ -287,8 +275,7 @@
       <container class="novidades">
         <div class="noticia">
           <div>
-            <img src="./imagens/tacaca.png" alt="Tacacá"  width="80px"
-            height="70px"/>
+            <img src="./imagens/tacaca.png" alt="Tacacá" width="80px" height="70px" />
           </div>
           <div>
             <h2>
@@ -305,8 +292,7 @@
         <hr />
         <div class="noticia">
           <div>
-            <img src="./imagens/molhos.jpg" alt="Molhos para Salada"  width="80px"
-            height="70px"/>
+            <img src="./imagens/molhos.jpg" alt="Molhos para Salada" width="80px" height="70px" />
           </div>
           <div>
             <h2>
@@ -324,8 +310,7 @@
         <hr />
         <div class="noticia">
           <div>
-            <img src="./imagens/churrasco.jpg" alt="Churrasco"  width="80px"
-            height="70px"/>
+            <img src="./imagens/churrasco.jpg" alt="Churrasco" width="80px" height="70px" />
           </div>
           <div>
             <h2>
@@ -366,21 +351,19 @@
           <div><img src="" alt="" />Gerente geral: Prof. Fisher Ferreira</div>
         </div>
         <div class="social">
-          <img src="./imagens/facebook.png" alt="Facebook"  width="20px"
-          height="20px"/>
+          <img src="./imagens/facebook.png" alt="Facebook" width="20px" height="20px" />
           <p>CookTime Brasil</p>
-          <img src="./imagens/instagram.png" alt="Instagram"  width="20px"
-          height="20px"/>
+          <img src="./imagens/instagram.png" alt="Instagram" width="20px" height="20px" />
           <p>@cooktimebr</p>
-          <img src="./imagens/youtube.png" alt="Youtube"  width="20px"
-          height="20px"/>
+          <img src="./imagens/youtube.png" alt="Youtube" width="20px" height="20px" />
           <p>@cooktimebr</p>
         </div>
       </container>
-    </main>
+  </main>
 
-    <footer>
-      <p>Site criado por Iara Costa e Raquel Duarte</p>
-    </footer>
-  </body>
+  <footer>
+    <p>Site criado por Iara Costa e Raquel Duarte</p>
+  </footer>
+</body>
+
 </html>
