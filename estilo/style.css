@@ -76,7 +76,6 @@ nav input[type="text"] {
   margin-right: 16px;
   font-size: 17px;
   box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.192);
-  width: 100%;
 }
 /* Missao Visao Valores */
 .mvv {
@@ -153,7 +152,7 @@ footer {
   }
 
   header {
-    width: 100%;
+    width: auto;
   }
   .imagens {
     width: 100%;
