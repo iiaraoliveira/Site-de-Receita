@@ -87,6 +87,15 @@ nav input[type="text"] {
     margin: 0;
     padding: 14px;
   }
+
+  /* .mvv {
+    display: flex;
+    flex-direction: column;
+    background-color: aqua;
+    gap: 10px;
+    margin: 5px;
+    display: block;
+  } */
 }
 
 body {
