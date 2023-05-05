@@ -14,13 +14,14 @@
   <header>
     <img src="./imagens/COOK TIME (1).png" alt="CookTime" width="90px" height="80px" />
     <div class="cabecalho">
-      <h1>COOKTIME</h1>
-      <p>Sempre a melhor receita</p>
-    </div>
-    <div class="login">
-      <button type="button" id="insc">Se inscreva</button>
-      <button type="button" id="log">Login</button>
-    </div>
+      <div class="cook">
+        <h1>COOKTIME</h1>
+        <p>Sempre a melhor receita</p>
+      </div>
+      <div class="login">
+        <button type="button" id="insc">Se inscreva</button>
+        <button type="button" id="log">Login</button>
+      </div> 
   </header>
   <nav>
     <a href="#">Home</a>
@@ -33,72 +34,71 @@
   </nav>
   <main>
     <article>
-      <img class="imagens" src="./imagens/pudim.jpg" alt="Pudim" />
+      <img class="imagens" src="./imagens/cookie.jpeg" alt="Cookies" width="100%" />
     </article>
     <!-- Section da missao, visao e valores-->
-    <section class="mvv maior">
-      <div class="mvv menor">
+    <div class="mvv">
+      <div class="mvvfilho">
         <h2 class="mb">MISSÃO</h2>
         <p class="mb">Ajudar nossos leitores a cozinhar com simplicidade e prazer.</p>
       </div>
 
-      <div class="mvv menor">
+      <div class="mvvfilho">
         <h2 class="mb">VISÃO</h2>
         <p class="mb">Ser seu "caderno" de receitas favorito.</p>
       </div>
 
-      <div class="mvv menor">
+      <div class="mvvfilho">
         <h2 class="mb">VALORES</h2>
-        <ul class="mb" type="1">
-          <!--Usar  list-style-image: url('endereço da imagem')no CSS para ficar mais fofo-->
-          <li>Agimos com propósito</li>
-          <li>Entregamos resultados com excelência</li>
-          <li>Construímos juntos</li>
-          <li>Trabalhamos com simplicidade</li>
-        </ul>
-      </div>
-    </section>
-    <!--Article da propaganda a esqueda-->
-    <article>
-      <!--aqui vai uma imagem q ocupa todo o article-->
-      <p>aqui vai ter a propaganda esquerda</p>
-      <img />
-    </article>
-    <!--Section com 3 receitas na vertical, em cada div uma foto de comida-->
-    <section>
-      <div>
-        <!--Criar uma classe para essa div, e fazer o background pelo css-->
-        <h2>Delícias Brasileiras</h2>
-        <p>
-          Descubra e aprenda a fazer diversos pratos presentes na nossa
-          culinária nacional. Desde tacacá, coxinha e cuscuz paulista, até
-          tortas doces, sobremesas e brigadeiro.
-        </p>
-      </div>
+        <p> Agimos com propósito, entregamos resultados com excelência, construímos juntos e trabalhamos com
+          simplicidade.</p>
 
-      <div>
-        <!--Criar uma classe para essa div, e fazer o background pelo css-->
-        <h2>Sabores ao Redor do Mundo</h2>
-        <p>
-          Conheça e viaje para os mais diversos países do mundo por meio de
-          seus pratos tradicionais. Você pode ir da Colômbia para a China,
-          conhecer todos os sabores da culinária mexicana e muito mais.
-        </p>
       </div>
+    </div>
 
-      <div>
-        <!--Criar uma classe para essa div, e fazer o background pelo css-->
-        <h2>Alimentação Saudável</h2>
-        <p>Conheça pratos deliciosos para cozinhar e incluir na sua dieta.</p>
-      </div>
-    </section>
-    <!--Article da propaganda a direita usar float para posicionar-->
-    <article>
-      <!--aqui vai uma imagem q ocupa todo o article-->
-      <p>aqui vai ter a propaganda direita</p>
+    <div class="post">
 
-      <img />
-    </article>
+      <!--Section com 3 receitas na vertical, em cada div uma foto de comida-->
+
+      <article class="publiE">
+        <!--aqui vai uma imagem q ocupa todo o article-->
+        <img class="prop" src="./imagens/Publi1.jpg"/>
+      </article>
+      <section class="postPai">
+        <div class="postfilho">
+          <!--Criar uma classe para essa div, e fazer o background pelo css-->
+          <h2>Delícias Brasileiras</h2>
+          <p>
+            Descubra e aprenda a fazer diversos pratos presentes na nossa
+            culinária nacional. Desde tacacá, coxinha e cuscuz paulista, até
+            tortas doces, sobremesas e brigadeiro.
+          </p>
+        </div>
+
+        <div class="postfilho">
+          <!--Criar uma classe para essa div, e fazer o background pelo css-->
+          <h2>Sabores ao Redor do Mundo</h2>
+          <p>
+            Conheça e viaje para os mais diversos países do mundo por meio de
+            seus pratos tradicionais. Você pode ir da Colômbia para a China,
+            conhecer todos os sabores da culinária mexicana e muito mais.
+          </p>
+        </div>
+
+        <div class="postfilho">
+          <!--Criar uma classe para essa div, e fazer o background pelo css-->
+          <h2>Alimentação Saudável</h2>
+          <p>Conheça pratos deliciosos para cozinhar e incluir na sua dieta.</p>
+        </div>
+      </section>
+      <!--Article da propaganda a direita usar float para posicionar-->
+      <article class="publi2">
+        <!--aqui vai uma imagem q ocupa todo o article-->
+
+        <img class="prop" src="./imagens/publi2.jpeg"/>
+      </article>
+    </div>
+
 
     <!--Mural de pessoas que adicionaram receitas no site.
         Sugestão: Usar galeria de imagens para colocar tudo junto-->
@@ -362,8 +362,19 @@
   </main>
 
   <footer>
+    <div id="sumario">
+      <img src="./imagens/COOK_TIME.png" alt="CookTime">
+    </div>
+    <nav id="">
+      <a href="#">QUEM SOMOS</a>
+      <a href="#">POLÍTICA DE PRIVACIDADE</a>
+      <a href="#">TERMOS DE USO</a>
+      <a href="#">ANUNCIE</a>
+      <a href="#">CONTATO</a>
+    </nav>
     <p>Site criado por Iara Costa e Raquel Duarte</p>
   </footer>
+</body>
 </body>
 
 </html>

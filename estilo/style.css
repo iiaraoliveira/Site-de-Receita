@@ -17,21 +17,39 @@
   padding: 0px;
 }
 
+body {
+  background-color: var(--rosaclaro);
+  overflow-x: hidden;
+}
+h2 {
+  color: rgb(119, 31, 31);
+}
+main {
+  max-width: 990px;
+  margin: auto;
+  background-color: var(--rosa);
+}
+
 header {
   background-color: var(--rosamedio);
   display: flex;
   min-height: 100px;
   padding-top: 30px;
+  padding-left: 20px;
   padding-left: 10px;
   width: 100%;
   /*baixar a fonte utilizada na logo*/
 }
 
 .cabecalho {
-  padding-left: 10px;
+  width: 100vw;
+  display: flex;
+  padding-left: 20px;
+  padding-right: 60px;
+  justify-content: space-between;
 }
 
-.cabecalho > h1 {
+.cook > h1 {
   color: var(--vermelho);
   padding-top: 5px;
   padding-bottom: 10px;
@@ -39,15 +57,16 @@ header {
   text-shadow: 2px 2px 0px #0202024b;
 }
 
-.cabecalho > p {
+.cook > p {
   color: var(--vermelho);
   margin: auto;
   font-family: var(--fonte-padrao);
 }
 
-.cabecalho > .login {
+.cook > .login {
   text-align: right;
 }
+
 nav {
   background-color: var(--vermelho);
   overflow: hidden;
@@ -79,52 +98,94 @@ nav input[type="text"] {
 }
 /* Missao Visao Valores */
 .mvv {
+  position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 990px;
+    margin: auto;
+    flex-wrap: nowrap;
+    align-items: center;
+    background-color: var(--rosamedio);
+    padding: 10px 40px;
+    border: 3px;
+    margin-top: 10px;
+}
+
+.mvvfilho {
+  border-style: solid;
+  border-color: var(--rosa);
+
+  max-width: 30%;
+  min-height: 90%;
+}
+
+.mvvfilho > h2{
+  text-align: center;
+  padding: 5px;
+}
+
+.mvvfilho > p{
+  text-align: justify;
+  padding: 5px;
+}
+
+/* propagandas e receitas */
+
+.post {
+  justify-content: center;
+  align-items: baseline;
   display: flex;
-  flex-direction: row;
-  background-color: var(--rosamedio);
+}
+
+.prop{
+  max-width: 300px;
+  min-height: 610px;
+  margin-top: 10px;
+}
+
+.postPai {
+  display: flex;
+  flex-direction: column;
+  max-width: 260px;
+  min-height: 580px;
+  margin: auto;
+  flex-wrap: wrap;
+  justify-content: space-between;
   align-items: center;
-  gap: 20px;
-  /* flex-wrap: wrap; */
-  padding: 20px;
+  background-color: var(--rosamedio);
+  padding: 10px 40px;
   border: 3px;
   margin-top: 10px;
 }
 
-.menor {
+.postfilho {
   border-style: solid;
   border-color: var(--rosa);
+  width: auto;
+  padding: 12px;
+  margin-top: 10px;
 }
 
-.mb {
-  margin-bottom: 15px;
+.postfilho > h2{
+  text-align: center;
+  padding: 5px;
 }
 
-.video {
-  width: 100%;
+.postfilho > p{
+  text-align: justify;
+  padding: 5px;
 }
 
-.imagens {
-}
 
-ul {
-  list-style-image: url(/imagens/coraçao.png);
-}
-
-body {
-  background-color: var(--rosaclaro);
-}
-h2 {
-  color: rgb(119, 31, 31);
-}
+/* footer */
 
 footer {
   background-color: var(--vermelho);
 }
 
-/* Parte das avaliações */
-.stars {
-  display: flex;
-  flex-direction: row;
+.sumario{
+
 }
 
 @media screen and (min-width: 0px) and (max-width: 600px) {
@@ -139,6 +200,7 @@ footer {
     width: auto;
   }
   .mvv {
+    display: flex;
     flex-direction: column;
     max-width: 260px;
     margin: auto;
@@ -146,9 +208,13 @@ footer {
     justify-content: space-between;
     align-items: center;
     background-color: var(--rosamedio);
-    padding: 40px;
+    padding: 10px 40px;
     border: 3px;
     margin-top: 10px;
+  }
+
+  .mvv > p {
+    text-align: center;
   }
 
   header {
@@ -157,17 +223,50 @@ footer {
   .imagens {
     width: 100%;
   }
-}
-@media screen and (min-width: 600px) and (max-width: 1024px) {
-  .mvv {
+  .video {
     width: 100%;
   }
 
-  .menor {
-    width: 600px;
-    height: 200px;
+  .publiE {
+    display: none;
+  }
+
+  .publi2 {
+    display: none;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 1024px) {
+  /* OK */
+
+  .mvv {
+    width: 100%;
+  }
+  /* OK */
+
+  .mvvfilho {
+    width: 300px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
+  }
+  /* OK */
+  .mvvfilho > p {
+    text-align: center;
+  }
+
+  .post {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .prop {
+    width: 240px;
+    height: 500px;
+    margin-top: 20px;
+  }
+
+  .postfilho {
+    width: 200px;
   }
 }
