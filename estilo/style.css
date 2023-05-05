@@ -130,7 +130,8 @@ nav input[type="text"] {
   padding: 5px;
 }
 
-/* propagandas e receitas */
+
+
 
 .post {
   justify-content: center;
@@ -176,9 +177,6 @@ nav input[type="text"] {
   text-align: justify;
   padding: 5px;
 }
-
-
-/* footer */
 
 footer {
   background-color: var(--vermelho);
