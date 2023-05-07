@@ -107,9 +107,8 @@
         Sugestão: Usar galeria de imagens para colocar tudo junto-->
     <section class="info1">
       <div class="destaque">
-        <div class="mural">
             <h3>Mural de receitas adicionadas</h3>
-          <div class="destaque-container">
+          <div class="mural">
             <div id="add">
               <img src="./imagens/sopa.jpg" alt="Sopa de Mandioquinha" />
                 <div id="texto-rec">
@@ -141,23 +140,26 @@
                 <p>Adicionada à 1 dia</p>
               </div>
             </div>
-          </div>
         </div>
       
         <!--Aqui o usuario vai add a receita -->
-        <form action="Receitas.html" method="post">
-          <div id="imagem">
-            <!-- <label for="receitaAdicionada">Insira sua receita e uma imagem, se tiver</label> -->
-            <input class="addinput" type="file" id="receitaAdicionada" name="receitaAdicionada" value="">
-          </div>
-          <div id="texto">
-  
-            <div>
-              <textarea  class="addinput" name="receita" rows="2" cols="30"></textarea>
-              <input class="addinput" type="submit" value="Enviar receita">
-              <input class="addinput" type="reset" value="Limpar">
+        <section class="add-receita">
+            <h3>Faça parte da nossa comunidade e adicione uma receita</h3>
+          <p> Escolha uma imagem de capa para sua receita, logo após escreva sua receita na caixa de texto abaixo. Não esqueça de clicar em enviar! </p>
+            <form action="Receitas.html" method="post">
+            <div id="imagem">
+              <!-- <label for="receitaAdicionada">Insira sua receita e uma imagem, se tiver</label> -->
+              <input class="addinput" type="file" id="receitaAdicionada" name="receitaAdicionada" value="">
             </div>
-        </form>
+            <div id="texto">
+    
+              <div>
+                <textarea  class="addinput" name="receita" rows="2" cols="30"></textarea>
+                <input class="addinput" type="submit" value="Enviar receita">
+                <input class="addinput" type="reset" value="Limpar">
+              </div>
+          </form>
+        </section>
       </div>
       <!--Aqui é onde terá o video do Youtube e links de navegação-->
       <section>
@@ -180,9 +182,10 @@
               <ul>
                 <li><a href="#">As favoritas do time</a></li>
                 <li><a href="#">Para amantes de doces</a></li>
-                <li><a href="#">Comidas festivas</a></li>
+                <li><a href="#">Festival cultural</a></li>
                 <li><a href="#">Regionalismo culinário</a></li>
                 <li><a href="#">As melhores veganas</a></li>
+                <li><a href="#">Conhecendo o mundo</a></li>
               </ul>
             </div>
           </nav>
