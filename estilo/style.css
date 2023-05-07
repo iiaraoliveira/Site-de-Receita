@@ -176,6 +176,67 @@ nav input[type="text"] {
   padding: 5px;
 }
 
+.forminscricao{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.inscricao{
+  background-color: #f2ada7bb;
+  padding: 40px;
+  text-align: center;
+  width: 60%;
+}
+
+.margem {
+  margin-bottom: 10px;
+}
+
+.forminput {
+  width: 180px;
+  box-sizing: border-box;
+  padding: 5px;
+  border: none;
+  margin-bottom: 10px;
+  border-radius: 10px;
+} 
+
+.labelform{
+  display: flex;
+  width: 72px;
+}
+
+.formulario{
+  text-align: left;
+}
+strong{
+  padding: 10px 0px 20px 0px;
+}
+
+.limpar{
+  background:#f2bf91;
+  border: 0;
+  margin: 10px;
+  color:#d94436;
+  padding: 0.2em 0.6em;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+  transform: translate(-50% -50%);
+
+}
+
+.botao{
+  font-size: 1.2em;
+  background:#d94436;
+  border: 0;
+  margin: 10px;
+  color: white;
+  padding: 0.2em 0.6em;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+  transform: translate(-50% -50%);
+}
 footer {
   background-color: var(--vermelho);
 }
