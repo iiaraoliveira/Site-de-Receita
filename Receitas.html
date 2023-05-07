@@ -131,22 +131,27 @@
         <p>Adicionada à 1 dia</p>
       </div>
       <!--Aqui o usuario vai add a receita -->
-      <section>
-        <div id="titulo">
-          <h2>Faça parte da nossa comunidade e adicione uma receita</h2>
+      <section class="formsection">
+        <div class="formcontainer">
+            <div id="titulo">
+              <h2 class="margin">Faça parte da nossa comunidade e adicione uma receita</h2>
+              <p class="margin"> Escolha uma imagem de capa para sua receita, logo após escreva sua receita na caixa de texto abaixo. Não esqueça de clicar em enviar! </p>
+            </div>
+            <form action="Receitas.html" method="post">
+            <div id="imagem">
+              <!-- <label for="receitaAdicionada">Insira sua receita e uma imagem, se tiver</label> -->
+              <input class="addinput" type="file" id="receitaAdicionada" name="receitaAdicionada" value="">
+            </div>
+            <div id="texto">
+    
+              <div>
+                <textarea  class="addinput" name="receita" rows="2" cols="30"></textarea>
+                <input class="addinput" type="submit" value="Enviar receita">
+                <input class="addinput" type="reset" value="Limpar">
+              </div>
+          </form>
         </div>
-        <form action="Receitas.html" method="post"></form>
-        <div id="imagem">
-          <label for="receitaAdicionada">Insira sua receita e uma imagem, se tiver</label>
-          <input type="file" id="receitaAdicionada" name="receitaAdicionada" value="">
-        </div>
-        <div id="texto">
-
-          <div>
-            <textarea name="receita" rows="2" cols="30"></textarea>
-            <input type="submit" value="Enviar receita">
-            <input type="reset" value="Limpar">
-          </div>
+      
       </section>
 
       <!--Aqui é onde terá o video do Youtube e links de navegação-->

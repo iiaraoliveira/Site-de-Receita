@@ -99,17 +99,17 @@ nav input[type="text"] {
 /* Missao Visao Valores */
 .mvv {
   position: relative;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    max-width: 990px;
-    margin: auto;
-    flex-wrap: nowrap;
-    align-items: center;
-    background-color: var(--rosamedio);
-    padding: 10px 40px;
-    border: 3px;
-    margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: 990px;
+  margin: auto;
+  flex-wrap: nowrap;
+  align-items: center;
+  background-color: var(--rosamedio);
+  padding: 10px 40px;
+  border: 3px;
+  margin-top: 10px;
 }
 
 .mvvfilho {
@@ -120,18 +120,15 @@ nav input[type="text"] {
   min-height: 90%;
 }
 
-.mvvfilho > h2{
+.mvvfilho > h2 {
   text-align: center;
   padding: 5px;
 }
 
-.mvvfilho > p{
+.mvvfilho > p {
   text-align: justify;
   padding: 5px;
 }
-
-
-
 
 .post {
   justify-content: center;
@@ -139,7 +136,7 @@ nav input[type="text"] {
   display: flex;
 }
 
-.prop{
+.prop {
   max-width: 300px;
   min-height: 610px;
   margin-top: 10px;
@@ -168,12 +165,12 @@ nav input[type="text"] {
   margin-top: 10px;
 }
 
-.postfilho > h2{
+.postfilho > h2 {
   text-align: center;
   padding: 5px;
 }
 
-.postfilho > p{
+.postfilho > p {
   text-align: justify;
   padding: 5px;
 }
@@ -182,9 +179,37 @@ footer {
   background-color: var(--vermelho);
 }
 
-.sumario{
-
+/* FORMULÁRIO DE ADD RECEITAS */
+.formsection {
 }
+
+.formcontainer {
+  max-width: 500px;
+  background-color: #f2ada7bb;
+  padding: 40px;
+  text-align: center;
+}
+
+.margin {
+  margin-bottom: 20px;
+}
+
+.addinput {
+  width: 60%;
+  box-sizing: border-box;
+  padding: 3px;
+  border: none;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+
+/* textarea {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 3px;
+  border: none;
+  margin-bottom: 10px;
+} */
 
 @media screen and (min-width: 0px) and (max-width: 600px) {
   nav > a,
