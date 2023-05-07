@@ -105,41 +105,45 @@
     <section class="info1">
       <div class="destaque">
         <div class="mural">
-          <div class="titulo">
             <h3>Mural de receitas adicionadas</h3>
-          </div>
           <div class="destaque-container">
             <div id="add">
               <img src="./imagens/sopa.jpg" alt="Sopa de Mandioquinha" />
-              <p>Sopa de Mandioquinha</p>
-              <p>Adicionada à 4 horas</p>
+                <div id="texto-rec">
+                <h4>Sopa de Mandioquinha</h4>
+                <p>Adicionada à 4 horas</p>
+              </div>
             </div>
 
             <div id="add">
               <img src="./imagens/morangoffe.png" alt="Morangoffe" />
-              <p>Morangoffe</p>
-              <p>Adicionada à 20 horas</p>
+              <div id="texto-rec">
+                <h4>Morangoffe</h4>
+                <p>Adicionada à 20 horas</p>
+              </div>
             </div>
 
             <div id="add">
               <img src="./imagens/sopaParaguai.jpg" alt="Sopa Paraguaia" />
-              <p>Sopa Paraguaia</p>
-              <p>Adicionada à 1 dia</p>
+              <div id="texto-rec">
+                <h4>Sopa Paraguaia</h4>
+                <p>Adicionada à 1 dia</p>
+              </div>
             </div>
 
             <div id="add">
               <img src="./imagens/mousse.jpg" alt="Mousse de Maracuja com Chocolate" />
-              <p>Mousse de Maracuja com Chocolate</p>
-              <p>Adicionada à 1 dia</p>
+              <div id="texto-rec">
+                <h4>Mousse de Maracuja com Chocolate</h4>
+                <p>Adicionada à 1 dia</p>
+              </div>
             </div>
           </div>
         </div>
       
         <!--Aqui o usuario vai add a receita -->
         <section class="add-receita">
-          <div class="titulo">
             <h3>Faça parte da nossa comunidade e adicione uma receita</h3>
-          </div>
           <form action="Receitas.html" method="post"></form>
           <div id="imagem">
             <label for="receitaAdicionada">Insira sua receita e uma imagem, se tiver</label>
@@ -155,10 +159,9 @@
       </div>
       <!--Aqui é onde terá o video do Youtube e links de navegação-->
       <section>
-        <div>
-          <!--Youtube-->
-
-          <div id="video">
+        <div class="social">
+          <h3>Social</h3>
+          <div class="container-social">
             <iframe src="https://www.youtube.com/embed/mhDl19m8tn0"
               title="YouTube video player" frameborder="0"
               allow="autoplay; fullscreen; picture-in-picture"
@@ -170,17 +173,16 @@
           </div>
         </div>
           <nav class="Navegador">
-            <div>
               <h3>Navegador</h3>
+            <div class="container-navegador">
+              <ul>
+                <li><a href="#">As favoritas do time</a></li>
+                <li><a href="#">Para amantes de doces</a></li>
+                <li><a href="#">Comidas festivas</a></li>
+                <li><a href="#">Regionalismo culinário</a></li>
+                <li><a href="#">As melhores veganas</a></li>
+              </ul>
             </div>
-            <!--adicionar lista-->
-            <ul>
-              <li><a href="#">As favoritas do time</a></li>
-              <li><a href="#">Para amantes de doces</a></li>
-              <li><a href="#">Comidas festivas</a></li>
-              <li><a href="#">Regionalismo culinário</a></li>
-              <li><a href="#">As melhores veganas</a></li>
-            </ul>
           </nav>
       </section>
     </section>
