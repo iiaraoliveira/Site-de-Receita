@@ -113,6 +113,17 @@ nav input[type="text"] {
   padding: 10px 40px;
   border: 3px;
   margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: 990px;
+  margin: auto;
+  flex-wrap: nowrap;
+  align-items: center;
+  background-color: var(--rosamedio);
+  padding: 10px 40px;
+  border: 3px;
+  margin-top: 10px;
 }
 
 .mvvfilho {
@@ -314,8 +325,39 @@ footer {
   background-color: var(--vermelho);
 }
 
+/* FORMULÁRIO DE ADD RECEITAS */
+.formsection {
+}
+
+.formcontainer {
+  max-width: 500px;
+  background-color: #f2ada7bb;
+  padding: 40px;
+  text-align: center;
+}
+
+.margin {
+  margin-bottom: 20px;
+}
+
+.addinput {
+  width: 60%;
+  box-sizing: border-box;
+  padding: 3px;
+  border: none;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
 .sumario {
 }
+
+/* textarea {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 3px;
+  border: none;
+  margin-bottom: 10px;
+} */
 
 @media screen and (min-width: 0px) and (max-width: 600px) {
   nav > a,
