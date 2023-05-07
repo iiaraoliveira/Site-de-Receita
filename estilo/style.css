@@ -13,6 +13,7 @@
 }
 
 * {
+  font-family: "Poppins", sans-serif;
   margin: 0px;
   padding: 0px;
 }
@@ -99,6 +100,17 @@ nav input[type="text"] {
 /* Missao Visao Valores */
 .mvv {
   position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: 990px;
+  margin: auto;
+  flex-wrap: nowrap;
+  align-items: center;
+  background-color: var(--rosamedio);
+  padding: 10px 40px;
+  border: 3px;
+  margin-top: 10px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -201,6 +213,8 @@ footer {
   border: none;
   margin-bottom: 10px;
   border-radius: 10px;
+}
+.sumario {
 }
 
 /* textarea {
