@@ -51,6 +51,7 @@ button {
   border: none;
   margin-bottom: 10px;
   border-radius: 10px;
+  transition-duration: 0.5s;
 }
 
 .cabecalho {
@@ -107,6 +108,7 @@ nav input[type="text"] {
   margin-right: 16px;
   font-size: 17px;
   box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.192);
+  border-radius: 7px;
 }
 /* Missao Visao Valores */
 .mvv {
@@ -335,14 +337,48 @@ form {
 
 /* footer */
 footer {
+  display: flex;
+  flex-direction: column;
   background-color: var(--vermelho);
+  align-items: center;
+  justify-content: space-between;
+  min-height: 7rem;
+  width: 100%;
+  padding: 1rem;
+  flex-wrap: nowrap;
 }
 
-.sumario {
+footer img{
+  width: 150px;
+  height: 100%;
 }
+
+footer p{
+  color: white;
+}
+
+#rodape{
+ display: flex;
+ flex-direction: row;
+ border-bottom: 3px solid #f28322;
+}
+
+#rodape a{
+  text-decoration: none;
+  font-weight: bold;
+  font-size: small;
+  color: white;
+  padding: 1rem;
+}
+
+/* #sumario{
+  overflow-y: hidden;
+  max-width: 990px;
+  margin: auto; 
+
+}*/
 
 @media screen and (min-width: 0px) and (max-width: 600px) {
-  nav > a,
   nav input[type="text"] {
     float: none;
     display: block;
@@ -352,6 +388,10 @@ footer {
     padding: 14px;
     width: auto;
   }
+  nav > a{
+    display: none;
+  }
+
   .mvv {
     display: flex;
     flex-direction: column;
@@ -407,8 +447,17 @@ footer {
   .Navegador {
     order: 1;
   }
-
   /* Fim mural, social navegador e add receita */
+  /* Inicio footer */
+  footer{
+    display: flex;
+    
+  }
+  #rodape a{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
 }
 @media screen and (min-width: 600px) and (max-width: 1024px) {
   /* OK */
