@@ -24,9 +24,11 @@ body {
   background-color: var(--rosaclaro);
   overflow-x: hidden;
 }
+
 h2 {
   color: var(--vinho);
 }
+
 main {
   max-width: 990px;
   margin: auto;
@@ -44,14 +46,7 @@ header {
   /*baixar a fonte utilizada na logo*/
 }
 
-button {
-  width: 60%;
-  box-sizing: border-box;
-  padding: 3px;
-  border: none;
-  margin-bottom: 10px;
-  border-radius: 10px;
-}
+
 
 .cabecalho {
   width: 100vw;
@@ -76,10 +71,35 @@ button {
 }
 
 .cook > .login {
+  display: flex;
+  flex-direction: column;
   text-align: right;
 }
 
-nav {
+.barra-sanduiche {
+  display: none;
+}
+
+button {
+  width: 60%;
+  box-sizing: border-box;
+  padding: 3px;
+  border: none;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.192);
+}
+
+#insc,
+#log {
+  width: 100%;
+}
+
+.barra {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
   background-color: var(--vermelho);
   overflow: hidden;
   padding: 14px 16px;
@@ -107,6 +127,7 @@ nav input[type="text"] {
   margin-right: 16px;
   font-size: 17px;
   box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.192);
+  border-radius: 7px;
 }
 /* Missao Visao Valores */
 .mvv {
@@ -395,23 +416,84 @@ form {
 
 /* footer */
 footer {
+  display: flex;
+  flex-direction: column;
   background-color: var(--vermelho);
+  align-items: center;
+  justify-content: space-between;
+  min-height: 7rem;
+  width: 100%;
+  padding: 1rem;
+  flex-wrap: nowrap;
 }
 
-.sumario {
+footer img {
+  width: 150px;
+  height: 100%;
 }
 
-@media screen and (min-width: 0px) and (max-width: 600px) {
-  nav > a,
+footer p {
+  color: white;
+}
+
+#rodape {
+  display: flex;
+  flex-direction: row;
+  border-bottom: 3px solid #f28322;
+}
+
+#rodape a {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: small;
+  color: white;
+  padding: 1rem;
+}
+
+@media screen and (min-width: 0px) and (max-width: 767px) {
+  body{
+    margin: 0px;
+  }
   nav input[type="text"] {
     float: none;
     display: block;
     text-align: left;
-    width: 100%;
+    height: 3px;
     margin: 0;
     padding: 14px;
     width: auto;
   }
+
+  nav > a {
+    display: none;
+  }
+
+  .login {
+    display: none;
+  }
+
+  header > img {
+    width: 90px;
+    height: 100%;
+  }
+
+  .button-respo {
+    width: 50px;
+    display: block;
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+  }
+
+  .cook > h1 {
+    font-size: 1.5rem;
+  }
+
+  .cook > p {
+    font-size: small;
+  }
+
   .mvv {
     display: flex;
     flex-direction: column;
@@ -467,10 +549,22 @@ footer {
   .Navegador {
     order: 1;
   }
-
   /* Fim mural, social navegador e add receita */
+  /* Inicio footer */
+  footer {
+    display: flex;
+    margin: 0px;
+    padding: 0px;
+  }
+  #rodape {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-size: 0.7rem;
+    justify-content: space-around;
+  }
 }
-@media screen and (min-width: 600px) and (max-width: 1024px) {
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
   /* OK */
 
   .mvv {
