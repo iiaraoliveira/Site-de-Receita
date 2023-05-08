@@ -51,6 +51,8 @@ button {
   border: none;
   margin-bottom: 10px;
   border-radius: 10px;
+  background-color: #d94436;
+  color: #fff;
 }
 
 .cabecalho {
@@ -65,8 +67,8 @@ button {
   color: var(--vermelho);
   padding-top: 5px;
   padding-bottom: 10px;
-  font-family: var(--fonte-logo);
-  text-shadow: 2px 2px 0px #0202024b;
+  font-family: 'Bree Serif', serif;
+  /* text-shadow: 2px 2px 0px #0202024b; */
 }
 
 .cook > p {
@@ -392,8 +394,69 @@ form {
   height: 100%;
   width: 100%;
 }
+ /* Avaliaçoes */
+.sectionAvaliacao {
+  height: 680px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  border-radius: 10px;
+}
 
-/* footer */
+.sectionAvaliacao > h2 {
+  padding: 40px;
+}
+
+.buttonAvaliacao {
+
+  float: right;
+  color: #fff;
+  background-color: #d94436;
+  width: 30%;
+  margin: 20px;
+  padding: 10px;
+}
+
+.sectionAvaliation {
+  display: flex;
+  flex-direction: row;
+  border: 3px;
+  border-radius: 5px;
+
+  
+  
+}
+
+.avaliacao {
+  width: 330px;
+  height: 442px;
+  padding: 10px;
+  border: 2px solid black;
+  margin: 5px;
+  box-shadow: 1px 3px 13px black;
+  border-radius: 10px;
+  background-color: #f2bf91;
+}
+
+.foto {
+  height: 50px; 
+  width: 50px;
+  border-radius: 25px;
+}
+
+.avaliacao > p {
+  margin: 10px 0px 0px 20px;
+}
+.avaliacao > h1 {
+  margin: 10px;
+}
+.stars {
+  padding: 0px 0px 0px 20px;
+  float: inline-end;
+}
+
+
+* footer */
 footer {
   background-color: var(--vermelho);
 }
@@ -401,7 +464,8 @@ footer {
 .sumario {
 }
 
-@media screen and (min-width: 0px) and (max-width: 600px) {
+
+@media screen and (min-width: 0px) and (max-width: 767px) {
   nav > a,
   nav input[type="text"] {
     float: none;
@@ -470,7 +534,7 @@ footer {
 
   /* Fim mural, social navegador e add receita */
 }
-@media screen and (min-width: 600px) and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
   /* OK */
 
   .mvv {
