@@ -318,6 +318,7 @@ h3 {
   align-items: center;
   justify-content: center;
   border-radius: 5px 5px 0 0;
+  padding: 0px;
 }
 
 .destaque .mural {
@@ -412,6 +413,40 @@ form {
 .container-social iframe {
   height: 100%;
   width: 100%;
+}
+
+/*Notícias*/
+.novidades .noticia {
+  background-color: var(--rosamedio);
+  display: flex;
+  flex-direction: column;
+  gap: 1.7rem;
+  padding-bottom: 2rem;
+}
+
+#bloco-noticia {
+  display: flex;
+  justify-content: baseline;
+  align-items: center;
+  flex-direction: row;
+  padding: 0 2rem 0 ;
+}
+
+#bloco-noticia > img {
+  min-width: 170px;
+  height: 100%;
+  padding-right: 2rem;
+}
+
+#txt-noticia > h4 {
+  color: var(--vinho);
+  font-size: 1.3rem;
+  padding-bottom: 10px;
+}
+
+#txt-noticia > p {
+  text-align: justify;
+  font-size: 1rem;
 }
 
 /* footer */
@@ -550,6 +585,29 @@ footer p {
     order: 1;
   }
   /* Fim mural, social navegador e add receita */
+
+  /*Noticias*/
+  #bloco-noticia {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  #bloco-noticia img {
+    max-width: 170px;
+    padding-bottom: 1rem;
+  }
+
+  #txt-noticia > h4 {
+    font-size: 1.1rem;
+  }
+  
+  #txt-noticia > p {
+    font-size: 0.9rem;
+  }
+
   /* Inicio footer */
   footer {
     display: flex;
@@ -612,4 +670,6 @@ footer p {
     max-width: 170px;
     padding-right: 0rem;
   }
+
+
 }
