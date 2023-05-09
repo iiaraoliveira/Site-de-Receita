@@ -218,9 +218,17 @@ button {
 
 .inscricao {
   background-color: #f2ada7bb;
-  padding: 40px;
   text-align: center;
   width: 60%;
+}
+
+.incricaoTitulo {
+  padding: 20px 15px;
+  background-color: var(--vermelho);
+}
+
+.corpoDaInscricao {
+  padding: 40px;
 }
 
 .margem {
@@ -318,6 +326,7 @@ h3 {
   justify-content: center;
   border-radius: 5px 5px 0 0;
   padding: 0px;
+  overflow: visible;
 }
 
 .destaque .mural {
