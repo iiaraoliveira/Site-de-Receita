@@ -56,6 +56,16 @@ button {
   background-color: #d94436;
   color: #fff;
 }
+button {
+  width: 60%;
+  box-sizing: border-box;
+  padding: 3px;
+  border: none;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  background-color: #d94436;
+  color: #fff;
+}
 
 .cabecalho {
   width: 100vw;
@@ -69,6 +79,8 @@ button {
   color: var(--vermelho);
   padding-top: 5px;
   padding-bottom: 10px;
+  font-family: 'Bree Serif', serif;
+  /* text-shadow: 2px 2px 0px #0202024b; */
   font-family: 'Bree Serif', serif;
   /* text-shadow: 2px 2px 0px #0202024b; */
 }
@@ -521,7 +533,7 @@ form {
 }
 
 
-/* footer */
+* footer */
 footer {
   display: flex;
   flex-direction: column;
@@ -744,6 +756,94 @@ footer p {
     font-size: 0.9rem;
   }
 
+/* avaliações */
+.sectionAvaliacao {
+  width: 100%;
+  height: 1600px;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  border-radius: 5px;
+  align-items: center;
+}
+
+.sectionAvaliacao > h2 {
+  padding: 10px;
+  height: 40px;
+}
+
+.buttonAvaliacao {
+
+  float: right;
+  color: #fff;
+  background-color: #d94436;
+  width: 30%;
+  margin: 10px;
+  padding: 10px;
+}
+
+.sectionAvaliation {
+  display: flex;
+  flex-direction: column;
+  border: 3px;
+  border-radius: 5px;
+
+  
+  }
+
+.avaliacao {
+  width: 305px;
+  height: 380px;
+  padding: 10px;
+  border: 2px solid black;
+  margin: 5px;
+  box-shadow: 1px 3px 13px black;
+  border-radius: 10px;
+  background-color: #f2bf91;
+}
+
+.foto {
+  margin: 20px;
+  height: 50px; 
+  width: 50px;
+  border-radius: 25px;
+}
+
+.avaliacao > p {
+  margin: 10px 0px 0px 20px;
+}
+.avaliacao > h1 {
+  padding: 0px 0px 0px 10px;
+}
+.stars {
+  padding: 0px 0px 0px 20px;
+  float: inline-end;
+}
+
+
+
+  /*Noticias*/
+  #bloco-noticia {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  #bloco-noticia img {
+    max-width: 170px;
+    padding-bottom: 1rem;
+  }
+
+  #txt-noticia > h4 {
+    font-size: 1.1rem;
+  }
+  
+  #txt-noticia > p {
+    font-size: 0.9rem;
+  }
+
   /* Inicio footer */
   footer {
     display: flex;
@@ -805,6 +905,8 @@ footer p {
     max-width: 170px;
     padding-right: 0rem;
   }
+
+
 
 
 }
