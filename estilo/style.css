@@ -166,8 +166,8 @@ button {
 }
 
 .post {
-  justify-content: center;
-  align-items: baseline;
+  justify-content: space-between;
+  align-items: start;
   display: flex;
 }
 
@@ -182,7 +182,6 @@ button {
   flex-direction: column;
   max-width: 260px;
   min-height: 580px;
-  margin: auto;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
@@ -621,8 +620,8 @@ footer p {
 
   .post {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    align-items: start;
+    height: fit-content;
   }
 
   .prop {
@@ -700,6 +699,10 @@ footer p {
 
   .mvv > p {
     text-align: center;
+  }
+
+  .post {
+    justify-content: center;
   }
 
   header {
