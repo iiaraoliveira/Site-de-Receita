@@ -163,23 +163,29 @@ button {
 }
 
 .mvvfilho {
+  display: flex;
+  flex-direction: column;
   border-style: solid;
   border-color: var(--rosa);
-
+  height: 10rem;
   max-width: 30%;
-  min-height: 90%;
+  justify-content: center;
+  align-items: center;
 }
 
 .mvvfilho > h2 {
   text-align: center;
   padding: 5px;
+  font-size: 1.3rem;
 }
 
 .mvvfilho > p {
   text-align: justify;
-  padding: 5px;
+  font-size: 0.8rem;
+  padding: 10px;
 }
 
+/*Receitas e anuncios*/
 .post {
   justify-content: space-between;
   align-items: start;
@@ -198,8 +204,8 @@ button {
   max-width: 260px;
   min-height: 580px;
   flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: center;
+  align-items: last center;
   background-color: var(--rosamedio);
   padding: 10px 40px;
   border: 3px;
@@ -210,88 +216,22 @@ button {
   border-style: solid;
   border-color: var(--rosa);
   width: auto;
-  padding: 12px;
+  padding: 12px 5px;
   margin-top: 10px;
 }
 
 .postfilho > h2 {
   text-align: center;
+  font-size: 1.3rem;
   padding: 5px;
 }
 
 .postfilho > p {
   text-align: justify;
+  font-size: 0.8rem;
   padding: 5px;
 }
 
-.forminscricao {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.inscricao {
-  background-color: #f2ada7bb;
-  text-align: center;
-  width: 60%;
-}
-
-.incricaoTitulo {
-  padding: 20px 15px;
-  background-color: var(--vermelho);
-}
-
-.corpoDaInscricao {
-  padding: 40px;
-}
-
-.margem {
-  margin-bottom: 10px;
-}
-
-.forminput {
-  width: 180px;
-  box-sizing: border-box;
-  padding: 5px;
-  border: none;
-  margin-bottom: 10px;
-  border-radius: 10px;
-}
-
-.labelform {
-  display: flex;
-  width: 72px;
-}
-
-.formulario {
-  text-align: left;
-}
-strong {
-  padding: 10px 0px 20px 0px;
-}
-
-.limpar {
-  background: #f2bf91;
-  border: 0;
-  margin: 10px;
-  color: #d94436;
-  padding: 0.2em 0.6em;
-  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
-  transform: translate(-50% -50%);
-}
-
-.botao {
-  font-size: 1.2em;
-  background: #d94436;
-  border: 0;
-  margin: 10px;
-  color: white;
-  padding: 0.2em 0.6em;
-  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
-  transform: translate(-50% -50%);
-}
 /* Mural, Adiciona receita e Social */
 .info1 {
   display: grid;
@@ -410,12 +350,84 @@ form {
 .container-navegador > ul {
   display: flex;
   flex-direction: column;
-  font-size: 1.1rem;
+  font-size: 1rem;
   color: black;
   list-style-type: armenian;
 }
 .container-navegador ul li {
   padding: 1rem;
+}
+
+/*Formulário de add receita*/
+
+.forminscricao {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 1rem;
+}
+
+.inscricao {
+  background-color: #f2ada7bb;
+  text-align: center;
+  width: 60%;
+}
+
+.incricaoTitulo {
+  padding: 20px 15px;
+  background-color: var(--vermelho);
+}
+
+.corpoDaInscricao {
+  padding: 40px;
+}
+
+.margem {
+  margin-bottom: 10px;
+}
+
+.forminput {
+  width: 180px;
+  box-sizing: border-box;
+  padding: 5px;
+  border: none;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+
+.labelform {
+  display: flex;
+  width: 72px;
+}
+
+.formulario {
+  text-align: left;
+}
+strong {
+  padding: 10px 0px 20px 0px;
+}
+
+.limpar {
+  background: #f2bf91;
+  border: 0;
+  margin: 10px;
+  color: #d94436;
+  padding: 0.2em 0.6em;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+  transform: translate(-50% -50%);
+}
+
+.botao {
+  font-size: 1.2em;
+  background: #d94436;
+  border: 0;
+  margin: 10px;
+  color: white;
+  padding: 0.2em 0.6em;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+  transform: translate(-50% -50%);
 }
 
 /* Avaliaçoes */
@@ -477,6 +489,7 @@ form {
 }
 
 /*Notícias*/
+
 .novidades .noticia {
   background-color: var(--rosamedio);
   display: flex;
@@ -618,10 +631,6 @@ footer p {
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
-  /* OK */
-
-  /* OK */
-
   .mvvfilho {
     width: 300px;
     display: flex;
