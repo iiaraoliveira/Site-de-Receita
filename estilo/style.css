@@ -9,12 +9,27 @@
   --vinho: rgb(119, 31, 31);
 
   --fonte-padrao: sans-serif, Tahoma, Arial, Verdana, Helvetica;
-  --fonte-logo: Arial, Tahoma, sans-serif;
+  --fonte-logo: "BreeSerif", Tahoma, sans-serif;
   --fonte-teste: Georgia, serif;
 }
 
+@font-face {
+  font-family: "BreeSerif";
+  src: url("./fonts/BreeSerif-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "PoppinsRegular";
+  src: url("./fonts/Poppins-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "PoppinsLight";
+  src: url("./fonts/Poppins-ExtraLight.ttf") format("truetype");
+}
+
 * {
-  font-family: "Poppins", sans-serif;
+  font-family: "PoppinsRegular", sans-serif;
   margin: 0px;
   padding: 0px;
   overflow-x: hidden;
